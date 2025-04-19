@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Carolyn's Project | WalkinVibe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" href="logo_cy.ico">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Carolyn Yu</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+<!--							<h2>Menu</h2>-->
+							<ul class="links">
+								<li><a href="index.html">About</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="./assets/doc/Resume.pdf">Resume</a></li>
+                                <li><a href="#">Close</a></li>
+							</ul>
+<!--							<a href="#" class="close">Close</a>                            -->
+						</div>
+					</nav>
+
+                <!-- Banner -->
+					<section id="banner" style="background-image: url('images/walkingvibe_bg.png'); background-size:cover;">
+						<div class="inner">
+                            <h3><a href="index.html"><i class="fas fa-home"></i> Home </a> / <a href="projects.html">Projects</a></h3>
+                            <h2>WalkingVibe</h2>
+                            <p>Reducing Virtual Reality Sickness and Improving Realism while <br> Walking in VR using Unobtrusive Head-mounted Vibrotactile Feedback.</p>
+                            <p> 🏆 In proceedings of ACM CHI 2020</p>
+                        </div>
+					</section>
+                
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+                    <!-- Content -->
+                         <div id="one" class="wrapper style2">
+                            <div class="inner">
+
+                                <section>
+                                    <h2 class="major">Overview</h2>
+                                    <p><highlight>Virtual Reality (VR) sickness</highlight> is common with symptoms such as headaches, nausea, and disorientation, and is a major barrier to using VR. We propose WalkingVibe, which applies 2-sided step-synchronized unobtrusive <highlight>vibrotactile feedback</highlight> for VR walking experiences, and also <highlight>reduces VR sickness</highlight> and discomfort while <highlight>improving realism</highlight>.</p>
+
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12 col-12-xsmall align-center"><span class="image video-wrapper fit opacity8 "><iframe src="https://www.youtube.com/embed/apO2XWIeveo"  scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></span>
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+
+                                    <h2>Role</h2>
+                                    <p>I designed human factor <highlight>experiments</highlight> to define the patterns of haptic feedback, developed the <highlight>wearable vibration prototype</highlight>, and analyzed the data of questionnaires and interviews to prove the proposed hypothesis. Besides, I developed an <highlight>eye-tracking system</highlight> in Unity including data recording, analysis, and visualization.</p>
+
+
+                                    <h2>Collaborators</h2>
+                                    <ul>
+                                        <li><b>Co-researcher:</b> Yi-Hao Peng</li>
+                                        <li><b>Co-programmer:</b> Shi-Hong Liu, Chung-Wei Wang</li>
+                                        <li><b>Advisor:</b> Neng-Hao Yu, Mike Y. Chen</li>
+                                    </ul>
+
+                                    <h2>Method &#38; Tools</h2>
+                                    <ul class="">
+                                        <li><b>Method: </b>User Study, Data Analysis, Data Visualization</li>
+                                        <li><b>Tools: </b>Unity, C#, Vive SRanipal SDK, Arduino</li>
+                                    </ul>
+
+                                    <br><br>
+
+                                    <h2>Research Process</h2>
+                                    
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12 align-center"><span class="image fit"><img src="images/walkingvibe_process.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+                                    
+<!--
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12"><span class="image opacity8 fit">
+                                                
+                                                <div class="container">
+                                                    <div class="progressbar">
+                                                        <li class="">Ideation</li>
+                                                        <li class="">Survey Research</li>
+                                                        <li class="">Development &#38; Prototype</li>
+                                                        <li class="">Pilot Study</li>
+                                                        <li class="">User Study</li>
+                                                        <li class="">Analysis</li>
+                                                    </div>
+                                                </div>
+                                                
+                                            </span></div>
+                                        </div>
+                                    </div>
+-->
+
+                                    <br><br>
+
+                                    <h2>Problem</h2>
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12"><span class="image fit"><img src="images/walkingvibe_sickness.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+                                    <p>When walking in VR environments, the disparity in apparent motion between two of the sensory systems, the visual and the vestibular stimuli, is called sensory conflict, which induces VR sickness.</p>
+                                    
+                                    <h3>Problem Statement</h3>
+                                    <p>Our goal is to look for a method that can be easily integrated into HMD to reduces VR sickness and enhance the walking realism.</p>
+                                    
+                                    <br><br>
+
+                                    <h2>Related Works</h2>
+                                    <p>To solve the VR sickness, several methods were proposed, and we divide them into 3 groups.</p>
+                                    
+                                     <div class="box alt">
+                                        <div class="row gtr-uniform align-center">
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_rekated_1.jpg" alt="" /></span><h4>Visual modification</h4>Their solution is effective, but the visual perception from the smooth movement used in the implementation resembles ”sliding” more than walking.</div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_rekated_2.jpg" alt="" /></span><h4>Body movement</h4>Though this method might mitigate user’s fatigue, the occupied controllers meanwhile limit the scenario this approach could be applied on.</div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_related_3.jpeg" alt="" /></span><h4>External stimulation</h4>These results suggest that using an indirect, walking-related haptic illusion to recouple mismatched systems is a plausible approach.</div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <br><br>
+                                    
+                                    <h2>Ideation</h2>
+                                    <p><span class="image right"><img src="images/web-icon.015.jpeg" alt="" /></span>Our design strategy for recoupling visuo-vestibular perception was inspired by the walking experience in real life. When we walk, we observed that the vibration caused by stepping on the ground can not only be felt by foot but also be passed to cervical spine and up to the head, where the visual and vestibular receptors are located. To generate the illusion of a foot-step vibration, we designed a head-mounted device to provide haptic feedback cues that would be synchronized with footsteps of the avatar.</p>
+                                    <br>
+
+                                    <br><br>
+
+                                    <h2>Developement</h2>
+                                    
+                                    <h3>Design Principle</h3>
+                                    <ol>
+                                        <li>Easy-integrated</li>
+                                        <li>Non-intrusive surface-level vibration (~ 150 Hz)</li>
+                                    </ol>
+                                    
+                                    <h3>Prototype</h3>
+                                    
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-6 col-12-xsmall"><p>Due to varying head sizes among users wearing the VR system’s head-mounted display (HMD), I attached Velcro strips onto a headband that can be adjusted for individual fit and achieve flexible positioning from our prototype’s haptic vibrations. On the outer rim of the headband, I added a plastic strip layer and sewed together an array of cells of fixed lengths of 15 mm. Each cell has an opening on the top of the headband, which provides an enclosure for easy installation of the vibration motors. For vibrations, we used Parallax servos—12 mm coin-style, 3.3 V/90 mA, freq=9000 rpm—that operate at 150 Hz.</p></div>
+                                            <div class="col-6 col-12-xsmall"><span class="image fit"><img src="images/walkingvibe_implement.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h3>Scenes &#38; Routes</h3>
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform align-center">
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_scene_city.jpg" alt="" /></span></div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_scene_forset.jpg" alt="" /></span></div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_scene_scifi.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform align-center">
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_route_1.jpg" alt="" /></span></div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_route_2.jpg" alt="" /></span></div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_route_3.jpg" alt="" /></span></div>
+                                        </div>
+                                    </div>
+
+                                    <br><br>
+                                    
+                                    <h2>User study</h2>
+                                    
+                                    <p>To evaluate how the visual, auditory, and tactile feedback affected the VR walking experiences, we conducted a 240-person study to compare 4 vibrotactile designs with 3 audio-visual conditions and a tactile condition. The 8 conditions are as follows:</p>
+                                    
+                                    <ul>
+                                        <li><b>4 vibrotactile: </b>combinations of 2 placement locations and 2 synchronization timing. The 2 locations are a) a single vibration motor on the back of the head vs. b) 2 vibration motors behind both ears. The 2 synchronization timing are a) random vs. b) synchronized to footsteps.</li>
+                                        <li><b>2 visual-only: </b>with head-bobbing and without.</li>
+                                        <li><b>1 visual+audio: </b>with synchronized footstep sounds.</li>
+                                        <li><b>1 tactile: </b>PhantomLegs, which alternatingly taps the areas in front of both ears synchronized to footsteps.</li>
+                                    </ul>
+                                    
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12"><span class="image fit"><img src="images/walkingvibe_conditions.jpg" alt="" /></span></div>
+                                        </div>
+                                        <div class="row gtr-uniform">
+                                            <div class="col-12 align-center"><span class="image fit"><img src="images/walkingvibe_conditions_table.jpg" alt="" /></span>Configurations of each feedback condition in the study.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h3>Study Procedure</h3>
+                                    <ol>
+                                        <li>Obtained participant's informed consent (IRB).</li>
+                                        <li>Before the study, participants were asked to fill out a questionnaire about their personal information and any experiences related to FPV or VR applications.</li>
+                                        <li>At the start of the study, each tactile feedback was applied to the users, where participants were able to adjust the amplitude level of the stimulation to a level that was comfortable for that time slot.</li>
+                                        <li>During the experiment, participants were seated statically and passively walked through the virtual environment.</li>
+                                        <li>For the study task, participants passed through virtual checkpoints that were scattered in three designed VR scenes with 3 three kinds of speed (2ms, 4m/s, and 6m/s).</li>
+                                    </ol>
+                                    
+                                    <br><br>
+
+                                    <h2>Analysis</h2>
+                                    <p>For our study’s measurements, we conducted three different questionnaires throughout the experiment.</p>
+                                    <ol>
+                                        <li><b>Discomfort Score: </b>which was included in order to collect continuous data on VR sickness in the experiment. During the experiment—after passing every two checkpoints for twenty seconds each—with a played audio recording, which asked for their perceived level of discomfort that ranged from 0 (no feeling) to 10.</li>
+                                        <li><b>Simulator Sickness Questionnaire (SSQ): </b>where participants were asked before and after the study about sickness symptoms on several factors.</li>
+                                        <li><b>Perceived Realism: </b>where participants were asked: "How similar was the walking experience you just experienced compared to the walking experience in the real world?", which denoted the level of congruity between physical and virtual walking experience from 0 (totally different) to 10 (totally the same).</li>
+                                    </ol>
+                                    
+                                    <h3>Result</h3>
+                                    
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform align-center">
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_ds.jpg" alt="" /></span><h4>Discomfort Score</h4>We employed a non-parametric Kruskal-Wallis test for determining whether there was any significant difference among the data. Our results demonstrated that 2-sided vibration (synchronized) feedback received significantly less perceived discomfort compared to all other conditions (*p &lt; .05).</div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_ssq.jpg" alt="" /></span><h4>SSQ</h4>We ran a mixedfactor 2 x 2 ANOVA on the RSS for the factors of visualtactile alignment (synchronized vs. random) and tactile placement (two-sided vs. backside). Our results suggested that two-sided vibrotactile feedback received lower RSS compared to backside stimulation (*p &lt; .05).</div>
+                                            <div class="col-4 col-12-xsmall"><span class="image fit opacity8"><img src="images/walkingvibe_pq.jpg" alt="" /></span><h4>Perceived Realism</h4>We ran a one-way ANOVA on all conditions and discovered that the two feedback conditions—audio and 2-sided vibration (synchronized)— provided significantly higher realism than most of the other conditions except for visual-only feedback: 2-sided vibration (synchronized) vs. visual-only; audio vs. visual-only.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h3>Conclusion</h3>
+                                    <ol>
+                                        <li>We conducted a <highlight>240-person study</highlight> to explore how head-region tactile feedback affects VR sickness, perceived discomfort, and realism for VR walking experiences.</li>
+                                        <li>Result shows WalkingVibe <highlight>significantly reduced VR sickness</highlight> and discomfort while <highlight>enhancing walking realism</highlight>.</li>
+                                        <li>In sum, WalkingVibe provides unobtrusive haptic feedback and is <highlight>easy to integrate</highlight> into current VR headsets.</li>
+                                    </ol>
+                                    
+                                    <br><br>
+
+                                </section>
+                                
+                                <section>
+                                    
+                                    <h2 class="major"><i class="fas fa-marker"></i> Extra Contributions</h2>
+                                    
+                                    <h3>Publication</h3>
+                                    <p>WalkingVibe: Reducing Virtual Reality Sickness and Improving Realism while Walking in VR using Unobtrusive Head-mounted Vibrotactile Feedback<br />In Proceedings of <highlight>ACM CHI ‘20</highlight>, April, 2020 | <a href="https://dl.acm.org/doi/abs/10.1145/3313831.3376847">[PDF] </a>|<a href="https://youtu.be/GuUxI8zZh3U"> [Video] </a>
+                                    <br /></p>
+                                    
+                                    <div class="box alt">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-4 col-12-xsmall">
+                                                <h3>Eye Tracking Analysis</h3>
+                                                <p>To understand the relationship between VR sickness and the user's eye-movement behavior in the virtual environment, I developed an eye-tracking system in Unity including data recording, analysis, and visualization.</p>
+                                                <p><b>Eye Tracking Tool:</b> Htc Vive Pro Eye</p>
+                                            </div>
+                                            
+                                            <div class="col-8 col-12-xsmall align-center"><span class="image fit"><img src="images/walkingvibe_heatmap.gif" alt="" /></span>
+                                            </div>
+                                            
+                                            <div class="col-6 col-12-xsmall align-center"><span class="image fit"><img src="images/walkingvibe_eyelogdoc.png" alt="" /></span>
+                                            </div>
+                                            
+                                            <div class="col-6 col-12-xsmall align-center"><span class="image fit"><img src="images/walkingvibe_eyeposlog.png" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <div class="align-center"><p>The eye position document and data recording format.</p></div>
+                                    </div>
+                                    
+                                    
+                                    <ul class="pagination">
+                                        <li><a href="./project_meetameal.html" class="button small"><i class="fas fa-arrow-left"></i> Prev Project </a></li>
+                                        <li><a href="./projects.html" class="button small"><span ><i class="fas fa-bars"></i></span></a></li>
+                                        <li><a href="./project_inertiavibe.html" class="button small"> Next Project <i class="fas fa-arrow-right"></i></a></li>
+                                    </ul>
+                                </section>
+
+                            </div>
+                        </div>
+
+                        
+                        
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+                            <div class="row">
+                                <div class="col-8 col-12-xsmall">
+                                    <ul class="contact">
+                                        <li class="icon solid fa-map-marker">New York, NY</li>
+                                        <li class="icon solid fa-envelope"><a href="mailto:cyux16@pratt.edu">cyux16@pratt.edu</a></li>
+                                        <li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/carolyn-yu-b76482119/?locale=en_US">linkedin.com/carolynyu-owo</a></li>
+                                        <li class="icon brands fa-github"><a href="https://github.com/Chialinyu">github.com/chialinyu</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-4 col-12-xsmall">
+                                    <img src="images/cy.jpg" style="width: 100%; max-width: 12em; border-radius: 50%; opacity: 0.8; margin-left: auto; margin-right: auto; display:block;">
+                                </div>
+                            </div>
+                            <br />
+                            <ul class="actions">
+                                <li><a href="#banner" class="button"><i class="fas fa-chevron-up"></i> Top</a></li>
+                            </ul>
+							<div class="copyright">
+								&copy; Carolyn Yu 2021 All rights reserved.
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  // Store hash
+                  var hash = this.hash;
+
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top - document.getElementById('header').offsetHeight
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51201918-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-51201918-1');
+            </script>
+
+	</body>
+</html>
